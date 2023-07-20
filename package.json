@@ -1,0 +1,33 @@
+{
+  "name": "todoers-srv",
+  "version": "1.0.0",
+  "description": "Todo App server",
+  "main": "app.js",
+  "author": "Hemanshu MMahajan",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "nodemon app.js",
+    "start:prod": "NODE_ENV=production nodemon server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.4.0",
+    "morgan": "^1.10.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.22.9",
+    "eslint": "^8.45.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=16 <17 || >=18 <19"
+  }
+}

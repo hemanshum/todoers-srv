@@ -2,12 +2,12 @@
   "name": "todoers-srv",
   "version": "1.0.0",
   "description": "Todo App server",
-  "main": "app.js",
+  "main": "server.js",
   "author": "Hemanshu MMahajan",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "nodemon server.js",
     "start:prod": "NODE_ENV=production nodemon server.js"
   },
   "dependencies": {

@@ -1,6 +1,5 @@
 {
   "env": {
-    "commonjs": true,
     "es6": true,
     "node": true
   },
@@ -21,5 +20,6 @@
     "no-plusplus": "off",
     "no-process-exit": "off",
     "class-methods-use-this": "off"
-  }
+  },
+  "import/extensions": ["error", "ignorePackages", { "js": "never" }]
 }

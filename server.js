@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 import globalErrorHandler from './src/controllers/errorController.js';
 import AppError from './src/utils/appError.js';
 import todoRouter from './src/routes/todoRouter.js';
+import userRouter from './src/routes/userRouter.js';
 
 const app = express();
 dotenv.config({ path: './config.env' });
@@ -22,6 +23,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/v1/todos', todoRouter);
+app.use('/api/v1/users', userRouter);
 
 // Error Handler Route
 app.all('*', (req, res, next) => {
